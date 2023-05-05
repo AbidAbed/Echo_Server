@@ -53,12 +53,15 @@ public class Server {
             int ascii;
             String data = "";
             while((ascii = input.read()) != -1){
+                if((char) ascii == '\n'){
+                    break;
+                }
                 data += (char) ascii;
             }
             System.out.println(data);
             output.write(data.getBytes());
             output.flush();
-            client.close();
+//            client.close();
         }
         catch (IOException ioe){
             System.out.println("main thread"+ioe);
