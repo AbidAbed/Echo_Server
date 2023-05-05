@@ -14,10 +14,10 @@ public class Server {
         ServerSocket server = null;
         try{
 //            server = new ServerSocket(3000);
-//            Thread serverThread = new Thread(() -> {
-//                Scanner scanner = new Scanner(System.in);
-//                command = scanner.nextLine();
-//            });
+    //            Thread serverThread = new Thread(() -> {
+    //                Scanner scanner = new Scanner(System.in);
+    //                command = scanner.nextLine();
+    //            });
 //            serverThread.start();
 //            while (true) {
 //                if(command.equals("EXIT")){
